@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct WheaterModel: Codable {
+struct WheaterModel: Codable, Equatable {
     let temp, tempMin, tempMax, windSpeed: Double
     let sunrise, sunset, pressure, humidity: Int
     let cretedBy, dateTime, city, wheater: String
