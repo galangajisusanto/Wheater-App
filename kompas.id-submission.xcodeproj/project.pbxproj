@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03348236279D08A3006B58B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348235279D08A3006B58B0 /* AppDelegate.swift */; };
+		03348238279D08A3006B58B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348237279D08A3006B58B0 /* SceneDelegate.swift */; };
+		0334823A279D08A3006B58B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348239279D08A3006B58B0 /* ViewController.swift */; };
+		0334823D279D08A3006B58B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0334823B279D08A3006B58B0 /* Main.storyboard */; };
+		0334823F279D08A4006B58B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0334823E279D08A4006B58B0 /* Assets.xcassets */; };
+		03348242279D08A4006B58B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03348240279D08A4006B58B0 /* LaunchScreen.storyboard */; };
+		0334824D279D08A4006B58B0 /* kompas_id_submissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334824C279D08A4006B58B0 /* kompas_id_submissionTests.swift */; };
+		03348257279D08A4006B58B0 /* kompas_id_submissionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348256279D08A4006B58B0 /* kompas_id_submissionUITests.swift */; };
+		03348259279D08A4006B58B0 /* kompas_id_submissionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348258279D08A4006B58B0 /* kompas_id_submissionUITestsLaunchTests.swift */; };
+		0334826F279D138E006B58B0 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334826E279D138E006B58B0 /* RemoteDataSource.swift */; };
+		03348271279D13A6006B58B0 /* RemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348270279D13A6006B58B0 /* RemoteDataSourceImpl.swift */; };
+		03348273279D14B1006B58B0 /* WheaterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348272279D14B1006B58B0 /* WheaterResponse.swift */; };
+		03348275279D178E006B58B0 /* WheaterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348274279D178E006B58B0 /* WheaterRepository.swift */; };
+		03348277279D17A6006B58B0 /* WheaterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348276279D17A6006B58B0 /* WheaterRepositoryImpl.swift */; };
+		03348279279D1833006B58B0 /* WheaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348278279D1833006B58B0 /* WheaterModel.swift */; };
+		0334827B279D3FD7006B58B0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334827A279D3FD7006B58B0 /* HomeViewModel.swift */; };
+		03348280279D40A4006B58B0 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334827F279D40A4006B58B0 /* Injection.swift */; };
+		03348285279D41ED006B58B0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348283279D41ED006B58B0 /* HomeViewController.swift */; };
+		03348286279D41ED006B58B0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03348284279D41ED006B58B0 /* HomeViewController.xib */; };
+		03348289279D8C49006B58B0 /* Controller+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03348288279D8C49006B58B0 /* Controller+Ext.swift */; };
+		03E8C7BD279E2A0D0072AFFE /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7BC279E2A0D0072AFFE /* Int+Ext.swift */; };
+		03E8C7BF279E2C7C0072AFFE /* DateTime+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7BE279E2C7C0072AFFE /* DateTime+Ext.swift */; };
+		03E8C7C2279E30660072AFFE /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7C1279E30660072AFFE /* Reachibility.swift */; };
+		03E8C7C4279E313A0072AFFE /* ObjectSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7C3279E313A0072AFFE /* ObjectSavable.swift */; };
+		03E8C7C6279E31640072AFFE /* ObjectSavableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7C5279E31640072AFFE /* ObjectSavableError.swift */; };
+		03E8C7C8279E31B10072AFFE /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7C7279E31B10072AFFE /* LocalDataSource.swift */; };
+		03E8C7CA279E32310072AFFE /* LocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7C9279E32310072AFFE /* LocalDataSourceImpl.swift */; };
+		03E8C7CC279E343A0072AFFE /* UserDefault+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8C7CB279E343A0072AFFE /* UserDefault+Ext.swift */; };
+		38F8D7EA48DE1D51CB563E52 /* Pods_kompas_id_submissionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FADA7FC819508412099A8D /* Pods_kompas_id_submissionTests.framework */; };
+		A9254F66E4853913A9BFE43C /* Pods_kompas_id_submission_kompas_id_submissionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C11C5DB8ABC59378CFC184 /* Pods_kompas_id_submission_kompas_id_submissionUITests.framework */; };
+		D8E23E87DA6FE66D7134F819 /* Pods_kompas_id_submission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2A3EC780B8BC0C1C7422EA /* Pods_kompas_id_submission.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03348249279D08A4006B58B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0334822A279D08A3006B58B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03348231279D08A3006B58B0;
+			remoteInfo = "kompas.id-submission";
+		};
+		03348253279D08A4006B58B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0334822A279D08A3006B58B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03348231279D08A3006B58B0;
+			remoteInfo = "kompas.id-submission";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03348232279D08A3006B58B0 /* kompas.id-submission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kompas.id-submission.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03348235279D08A3006B58B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03348237279D08A3006B58B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03348239279D08A3006B58B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0334823C279D08A3006B58B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0334823E279D08A4006B58B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03348241279D08A4006B58B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03348243279D08A4006B58B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03348248279D08A4006B58B0 /* kompas.id-submissionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kompas.id-submissionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0334824C279D08A4006B58B0 /* kompas_id_submissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kompas_id_submissionTests.swift; sourceTree = "<group>"; };
+		03348252279D08A4006B58B0 /* kompas.id-submissionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kompas.id-submissionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03348256279D08A4006B58B0 /* kompas_id_submissionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kompas_id_submissionUITests.swift; sourceTree = "<group>"; };
+		03348258279D08A4006B58B0 /* kompas_id_submissionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kompas_id_submissionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0334826E279D138E006B58B0 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		03348270279D13A6006B58B0 /* RemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		03348272279D14B1006B58B0 /* WheaterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterResponse.swift; sourceTree = "<group>"; };
+		03348274279D178E006B58B0 /* WheaterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterRepository.swift; sourceTree = "<group>"; };
+		03348276279D17A6006B58B0 /* WheaterRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterRepositoryImpl.swift; sourceTree = "<group>"; };
+		03348278279D1833006B58B0 /* WheaterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterModel.swift; sourceTree = "<group>"; };
+		0334827A279D3FD7006B58B0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0334827F279D40A4006B58B0 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		03348283279D41ED006B58B0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		03348284279D41ED006B58B0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		03348288279D8C49006B58B0 /* Controller+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Controller+Ext.swift"; sourceTree = "<group>"; };
+		03E8C7BC279E2A0D0072AFFE /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		03E8C7BE279E2C7C0072AFFE /* DateTime+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateTime+Ext.swift"; sourceTree = "<group>"; };
+		03E8C7C1279E30660072AFFE /* Reachibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachibility.swift; sourceTree = "<group>"; };
+		03E8C7C3279E313A0072AFFE /* ObjectSavable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSavable.swift; sourceTree = "<group>"; };
+		03E8C7C5279E31640072AFFE /* ObjectSavableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSavableError.swift; sourceTree = "<group>"; };
+		03E8C7C7279E31B10072AFFE /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		03E8C7C9279E32310072AFFE /* LocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		03E8C7CB279E343A0072AFFE /* UserDefault+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Ext.swift"; sourceTree = "<group>"; };
+		03F2160041A29869CED949CA /* Pods-kompas.id-submissionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kompas.id-submissionTests.debug.xcconfig"; path = "Target Support Files/Pods-kompas.id-submissionTests/Pods-kompas.id-submissionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EAC30B2D6451638E0C46BAC /* Pods-kompas.id-submissionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kompas.id-submissionTests.release.xcconfig"; path = "Target Support Files/Pods-kompas.id-submissionTests/Pods-kompas.id-submissionTests.release.xcconfig"; sourceTree = "<group>"; };
+		11C11C5DB8ABC59378CFC184 /* Pods_kompas_id_submission_kompas_id_submissionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kompas_id_submission_kompas_id_submissionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D760FBFD0C7A096A719D725 /* Pods-kompas.id-submission.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kompas.id-submission.release.xcconfig"; path = "Target Support Files/Pods-kompas.id-submission/Pods-kompas.id-submission.release.xcconfig"; sourceTree = "<group>"; };
+		9F2A3EC780B8BC0C1C7422EA /* Pods_kompas_id_submission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kompas_id_submission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FADA7FC819508412099A8D /* Pods_kompas_id_submissionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kompas_id_submissionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5682000CC6216BD32DAE0E /* Pods-kompas.id-submission-kompas.id-submissionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kompas.id-submission-kompas.id-submissionUITests.release.xcconfig"; path = "Target Support Files/Pods-kompas.id-submission-kompas.id-submissionUITests/Pods-kompas.id-submission-kompas.id-submissionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E45139F721AE254958159A29 /* Pods-kompas.id-submission-kompas.id-submissionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kompas.id-submission-kompas.id-submissionUITests.debug.xcconfig"; path = "Target Support Files/Pods-kompas.id-submission-kompas.id-submissionUITests/Pods-kompas.id-submission-kompas.id-submissionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB58697F4798D2092EEC52F7 /* Pods-kompas.id-submission.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kompas.id-submission.debug.xcconfig"; path = "Target Support Files/Pods-kompas.id-submission/Pods-kompas.id-submission.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0334822F279D08A3006B58B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E23E87DA6FE66D7134F819 /* Pods_kompas_id_submission.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03348245279D08A4006B58B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F8D7EA48DE1D51CB563E52 /* Pods_kompas_id_submissionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0334824F279D08A4006B58B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9254F66E4853913A9BFE43C /* Pods_kompas_id_submission_kompas_id_submissionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03348229279D08A3006B58B0 = {
+			isa = PBXGroup;
+			children = (
+				03348234279D08A3006B58B0 /* kompas.id-submission */,
+				0334824B279D08A4006B58B0 /* kompas.id-submissionTests */,
+				03348255279D08A4006B58B0 /* kompas.id-submissionUITests */,
+				03348233279D08A3006B58B0 /* Products */,
+				C3370BF6048761665DE752CE /* Pods */,
+				BEFEB794C8E0367B2E141E09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03348233279D08A3006B58B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03348232279D08A3006B58B0 /* kompas.id-submission.app */,
+				03348248279D08A4006B58B0 /* kompas.id-submissionTests.xctest */,
+				03348252279D08A4006B58B0 /* kompas.id-submissionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03348234279D08A3006B58B0 /* kompas.id-submission */ = {
+			isa = PBXGroup;
+			children = (
+				03E8C7C0279E30580072AFFE /* Network */,
+				03348287279D8C12006B58B0 /* Extenstions */,
+				03348269279D12AE006B58B0 /* Data */,
+				03348268279D12A7006B58B0 /* Presentation */,
+				03348267279D12A1006B58B0 /* Domain */,
+				03348266279D1298006B58B0 /* DI */,
+				03348265279D128F006B58B0 /* Extension */,
+				03348235279D08A3006B58B0 /* AppDelegate.swift */,
+				03348237279D08A3006B58B0 /* SceneDelegate.swift */,
+				03348239279D08A3006B58B0 /* ViewController.swift */,
+				0334823B279D08A3006B58B0 /* Main.storyboard */,
+				0334823E279D08A4006B58B0 /* Assets.xcassets */,
+				03348240279D08A4006B58B0 /* LaunchScreen.storyboard */,
+				03348243279D08A4006B58B0 /* Info.plist */,
+			);
+			path = "kompas.id-submission";
+			sourceTree = "<group>";
+		};
+		0334824B279D08A4006B58B0 /* kompas.id-submissionTests */ = {
+			isa = PBXGroup;
+			children = (
+				0334824C279D08A4006B58B0 /* kompas_id_submissionTests.swift */,
+			);
+			path = "kompas.id-submissionTests";
+			sourceTree = "<group>";
+		};
+		03348255279D08A4006B58B0 /* kompas.id-submissionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03348256279D08A4006B58B0 /* kompas_id_submissionUITests.swift */,
+				03348258279D08A4006B58B0 /* kompas_id_submissionUITestsLaunchTests.swift */,
+			);
+			path = "kompas.id-submissionUITests";
+			sourceTree = "<group>";
+		};
+		03348265279D128F006B58B0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		03348266279D1298006B58B0 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				0334827F279D40A4006B58B0 /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		03348267279D12A1006B58B0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				03348278279D1833006B58B0 /* WheaterModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		03348268279D12A7006B58B0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0334827C279D3FDB006B58B0 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		03348269279D12AE006B58B0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0334826B279D12E7006B58B0 /* LocalDataSource */,
+				0334826A279D12DC006B58B0 /* RemoteDataSource */,
+				03348274279D178E006B58B0 /* WheaterRepository.swift */,
+				03348276279D17A6006B58B0 /* WheaterRepositoryImpl.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0334826A279D12DC006B58B0 /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0334826C279D12F6006B58B0 /* Response */,
+				0334826E279D138E006B58B0 /* RemoteDataSource.swift */,
+				03348270279D13A6006B58B0 /* RemoteDataSourceImpl.swift */,
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
+		0334826B279D12E7006B58B0 /* LocalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				03E8C7C3279E313A0072AFFE /* ObjectSavable.swift */,
+				03E8C7C5279E31640072AFFE /* ObjectSavableError.swift */,
+				03E8C7C7279E31B10072AFFE /* LocalDataSource.swift */,
+				03E8C7C9279E32310072AFFE /* LocalDataSourceImpl.swift */,
+			);
+			path = LocalDataSource;
+			sourceTree = "<group>";
+		};
+		0334826C279D12F6006B58B0 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				03348272279D14B1006B58B0 /* WheaterResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		0334827C279D3FDB006B58B0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0334827E279D3FE7006B58B0 /* View */,
+				0334827D279D3FE0006B58B0 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0334827D279D3FE0006B58B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0334827A279D3FD7006B58B0 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0334827E279D3FE7006B58B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03348283279D41ED006B58B0 /* HomeViewController.swift */,
+				03348284279D41ED006B58B0 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03348287279D8C12006B58B0 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				03348288279D8C49006B58B0 /* Controller+Ext.swift */,
+				03E8C7BC279E2A0D0072AFFE /* Int+Ext.swift */,
+				03E8C7BE279E2C7C0072AFFE /* DateTime+Ext.swift */,
+				03E8C7CB279E343A0072AFFE /* UserDefault+Ext.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		03E8C7C0279E30580072AFFE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				03E8C7C1279E30660072AFFE /* Reachibility.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BEFEB794C8E0367B2E141E09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F2A3EC780B8BC0C1C7422EA /* Pods_kompas_id_submission.framework */,
+				11C11C5DB8ABC59378CFC184 /* Pods_kompas_id_submission_kompas_id_submissionUITests.framework */,
+				B8FADA7FC819508412099A8D /* Pods_kompas_id_submissionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3370BF6048761665DE752CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB58697F4798D2092EEC52F7 /* Pods-kompas.id-submission.debug.xcconfig */,
+				2D760FBFD0C7A096A719D725 /* Pods-kompas.id-submission.release.xcconfig */,
+				E45139F721AE254958159A29 /* Pods-kompas.id-submission-kompas.id-submissionUITests.debug.xcconfig */,
+				BB5682000CC6216BD32DAE0E /* Pods-kompas.id-submission-kompas.id-submissionUITests.release.xcconfig */,
+				03F2160041A29869CED949CA /* Pods-kompas.id-submissionTests.debug.xcconfig */,
+				0EAC30B2D6451638E0C46BAC /* Pods-kompas.id-submissionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03348231279D08A3006B58B0 /* kompas.id-submission */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0334825C279D08A4006B58B0 /* Build configuration list for PBXNativeTarget "kompas.id-submission" */;
+			buildPhases = (
+				6DA94316799C2DE46845373C /* [CP] Check Pods Manifest.lock */,
+				0334822E279D08A3006B58B0 /* Sources */,
+				0334822F279D08A3006B58B0 /* Frameworks */,
+				03348230279D08A3006B58B0 /* Resources */,
+				0D284B900F6ACB70276330BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kompas.id-submission";
+			productName = "kompas.id-submission";
+			productReference = 03348232279D08A3006B58B0 /* kompas.id-submission.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03348247279D08A4006B58B0 /* kompas.id-submissionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0334825F279D08A4006B58B0 /* Build configuration list for PBXNativeTarget "kompas.id-submissionTests" */;
+			buildPhases = (
+				E5EC3458D9821E101B6F1D92 /* [CP] Check Pods Manifest.lock */,
+				03348244279D08A4006B58B0 /* Sources */,
+				03348245279D08A4006B58B0 /* Frameworks */,
+				03348246279D08A4006B58B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0334824A279D08A4006B58B0 /* PBXTargetDependency */,
+			);
+			name = "kompas.id-submissionTests";
+			productName = "kompas.id-submissionTests";
+			productReference = 03348248279D08A4006B58B0 /* kompas.id-submissionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03348251279D08A4006B58B0 /* kompas.id-submissionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03348262279D08A4006B58B0 /* Build configuration list for PBXNativeTarget "kompas.id-submissionUITests" */;
+			buildPhases = (
+				36E2DB3677874E84C4158C1B /* [CP] Check Pods Manifest.lock */,
+				0334824E279D08A4006B58B0 /* Sources */,
+				0334824F279D08A4006B58B0 /* Frameworks */,
+				03348250279D08A4006B58B0 /* Resources */,
+				B003AE053F2F16896C55F18C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03348254279D08A4006B58B0 /* PBXTargetDependency */,
+			);
+			name = "kompas.id-submissionUITests";
+			productName = "kompas.id-submissionUITests";
+			productReference = 03348252279D08A4006B58B0 /* kompas.id-submissionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0334822A279D08A3006B58B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					03348231279D08A3006B58B0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					03348247279D08A4006B58B0 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 03348231279D08A3006B58B0;
+					};
+					03348251279D08A4006B58B0 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 03348231279D08A3006B58B0;
+					};
+				};
+			};
+			buildConfigurationList = 0334822D279D08A3006B58B0 /* Build configuration list for PBXProject "kompas.id-submission" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03348229279D08A3006B58B0;
+			productRefGroup = 03348233279D08A3006B58B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03348231279D08A3006B58B0 /* kompas.id-submission */,
+				03348247279D08A4006B58B0 /* kompas.id-submissionTests */,
+				03348251279D08A4006B58B0 /* kompas.id-submissionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03348230279D08A3006B58B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03348242279D08A4006B58B0 /* LaunchScreen.storyboard in Resources */,
+				0334823F279D08A4006B58B0 /* Assets.xcassets in Resources */,
+				0334823D279D08A3006B58B0 /* Main.storyboard in Resources */,
+				03348286279D41ED006B58B0 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03348246279D08A4006B58B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03348250279D08A4006B58B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D284B900F6ACB70276330BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kompas.id-submission/Pods-kompas.id-submission-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kompas.id-submission/Pods-kompas.id-submission-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kompas.id-submission/Pods-kompas.id-submission-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36E2DB3677874E84C4158C1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kompas.id-submission-kompas.id-submissionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA94316799C2DE46845373C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kompas.id-submission-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B003AE053F2F16896C55F18C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kompas.id-submission-kompas.id-submissionUITests/Pods-kompas.id-submission-kompas.id-submissionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kompas.id-submission-kompas.id-submissionUITests/Pods-kompas.id-submission-kompas.id-submissionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kompas.id-submission-kompas.id-submissionUITests/Pods-kompas.id-submission-kompas.id-submissionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5EC3458D9821E101B6F1D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kompas.id-submissionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0334822E279D08A3006B58B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E8C7CC279E343A0072AFFE /* UserDefault+Ext.swift in Sources */,
+				03E8C7CA279E32310072AFFE /* LocalDataSourceImpl.swift in Sources */,
+				03348277279D17A6006B58B0 /* WheaterRepositoryImpl.swift in Sources */,
+				03348275279D178E006B58B0 /* WheaterRepository.swift in Sources */,
+				03348280279D40A4006B58B0 /* Injection.swift in Sources */,
+				03348271279D13A6006B58B0 /* RemoteDataSourceImpl.swift in Sources */,
+				03E8C7BD279E2A0D0072AFFE /* Int+Ext.swift in Sources */,
+				0334827B279D3FD7006B58B0 /* HomeViewModel.swift in Sources */,
+				03E8C7C2279E30660072AFFE /* Reachibility.swift in Sources */,
+				03348273279D14B1006B58B0 /* WheaterResponse.swift in Sources */,
+				0334826F279D138E006B58B0 /* RemoteDataSource.swift in Sources */,
+				0334823A279D08A3006B58B0 /* ViewController.swift in Sources */,
+				03E8C7C6279E31640072AFFE /* ObjectSavableError.swift in Sources */,
+				03E8C7C8279E31B10072AFFE /* LocalDataSource.swift in Sources */,
+				03348236279D08A3006B58B0 /* AppDelegate.swift in Sources */,
+				03348279279D1833006B58B0 /* WheaterModel.swift in Sources */,
+				03E8C7BF279E2C7C0072AFFE /* DateTime+Ext.swift in Sources */,
+				03348289279D8C49006B58B0 /* Controller+Ext.swift in Sources */,
+				03E8C7C4279E313A0072AFFE /* ObjectSavable.swift in Sources */,
+				03348238279D08A3006B58B0 /* SceneDelegate.swift in Sources */,
+				03348285279D41ED006B58B0 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03348244279D08A4006B58B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0334824D279D08A4006B58B0 /* kompas_id_submissionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0334824E279D08A4006B58B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03348259279D08A4006B58B0 /* kompas_id_submissionUITestsLaunchTests.swift in Sources */,
+				03348257279D08A4006B58B0 /* kompas_id_submissionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0334824A279D08A4006B58B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03348231279D08A3006B58B0 /* kompas.id-submission */;
+			targetProxy = 03348249279D08A4006B58B0 /* PBXContainerItemProxy */;
+		};
+		03348254279D08A4006B58B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03348231279D08A3006B58B0 /* kompas.id-submission */;
+			targetProxy = 03348253279D08A4006B58B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0334823B279D08A3006B58B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0334823C279D08A3006B58B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03348240279D08A4006B58B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03348241279D08A4006B58B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0334825A279D08A4006B58B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0334825B279D08A4006B58B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0334825D279D08A4006B58B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB58697F4798D2092EEC52F7 /* Pods-kompas.id-submission.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kompas.id-submission/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galangaji.kompas-id-submission";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0334825E279D08A4006B58B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D760FBFD0C7A096A719D725 /* Pods-kompas.id-submission.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kompas.id-submission/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galangaji.kompas-id-submission";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03348260279D08A4006B58B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F2160041A29869CED949CA /* Pods-kompas.id-submissionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galangaji.kompas-id-submissionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kompas.id-submission.app/kompas.id-submission";
+			};
+			name = Debug;
+		};
+		03348261279D08A4006B58B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EAC30B2D6451638E0C46BAC /* Pods-kompas.id-submissionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galangaji.kompas-id-submissionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kompas.id-submission.app/kompas.id-submission";
+			};
+			name = Release;
+		};
+		03348263279D08A4006B58B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E45139F721AE254958159A29 /* Pods-kompas.id-submission-kompas.id-submissionUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galangaji.kompas-id-submissionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kompas.id-submission";
+			};
+			name = Debug;
+		};
+		03348264279D08A4006B58B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5682000CC6216BD32DAE0E /* Pods-kompas.id-submission-kompas.id-submissionUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galangaji.kompas-id-submissionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kompas.id-submission";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0334822D279D08A3006B58B0 /* Build configuration list for PBXProject "kompas.id-submission" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0334825A279D08A4006B58B0 /* Debug */,
+				0334825B279D08A4006B58B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0334825C279D08A4006B58B0 /* Build configuration list for PBXNativeTarget "kompas.id-submission" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0334825D279D08A4006B58B0 /* Debug */,
+				0334825E279D08A4006B58B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0334825F279D08A4006B58B0 /* Build configuration list for PBXNativeTarget "kompas.id-submissionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03348260279D08A4006B58B0 /* Debug */,
+				03348261279D08A4006B58B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03348262279D08A4006B58B0 /* Build configuration list for PBXNativeTarget "kompas.id-submissionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03348263279D08A4006B58B0 /* Debug */,
+				03348264279D08A4006B58B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0334822A279D08A3006B58B0 /* Project object */;
+}
