@@ -46,18 +46,6 @@ class HomeViewController: UIViewController {
         fetchCurentWheater()
     }
     
-    
-//    func getMapCountAlphabet (text: String) -> [Character : Int] {
-//        
-//        var mapCount = [Character: Int]()
-//        
-//        for char in text {
-//            if ()
-//        }
-//        
-//        
-//    }
-    
     private func setupBackgroundColor() {
         let colorTop = UIColor.systemIndigo.cgColor
         let colorBottom = UIColor.purple.cgColor
